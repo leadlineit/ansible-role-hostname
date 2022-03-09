@@ -1,0 +1,15 @@
+---
+- name: Update repo cache and install dependencies(dbus) for system hostname configuration
+  apt:
+    name: dbus
+    state: present
+    update_cache: yes
+
+- name: Start dbus.service, if not started
+  service:
+    name: dbus
+    state: started
+
+- name: Set system hostname
+  hostname:
+    name: "{{ inventory_hostname }}"

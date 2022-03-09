@@ -1,0 +1,3 @@
+---
+# defaults file for leadlineit.hostname
+inventory_hostname: foo.bar.com
