@@ -14,6 +14,7 @@ Role Variables
 --------------
 
 ```yaml
+---
 inventory_hostname: foo.bar.com
 ```
 You can set "inventory_hostname" variable, or it'll be pass from your ansible inventory file.
