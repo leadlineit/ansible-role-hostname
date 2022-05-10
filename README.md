@@ -14,7 +14,7 @@ Role Variables
 --------------
 
 ```yaml
-  inventory_hostname: foo.bar.com
+inventory_hostname: foo.bar.com
 ```
 You can set "inventory_hostname" variable, or it'll be pass from your ansible inventory file.
 
@@ -29,9 +29,9 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
 ```yaml
-    - hosts: servers
-      roles:
-         - { role: leadlineit.hostname, tags: hostname }
+- hosts: servers
+  roles:
+      - { role: leadlineit.hostname, tags: hostname }
 ```
 
 License
