@@ -1,6 +1,7 @@
 # Ansible Role Hostname
 
 ![Build Status](https://github.com/leadlineit/ansible-role-hostname/actions/workflows/ansible-galaxy-ci.yml/badge.svg)
+[![Galaxy Role](https://img.shields.io/badge/Ansible--Galaxy-leadlineit.hostname-blue.svg?logo=ansible&logoColor=white)](https://galaxy.ansible.com/leadlineit/hostname/)
 
 This role helps to configure or change system hostname on a Debian (stretch/buster/bullseye).
 

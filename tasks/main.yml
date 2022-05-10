@@ -1,15 +1,17 @@
 ---
 - name: Update repo cache and install dependencies(dbus) for system hostname configuration
-  apt:
-    name: dbus
+  ansible.builtin.apt:
+    name: "{{ item }}"
     state: present
-    update_cache: yes
+    update_cache: true
+  with_items:
+    - dbus
 
 - name: Start dbus.service, if not started
-  service:
+  ansible.builtin.service:
     name: dbus
     state: started
 
 - name: Set system hostname
-  hostname:
+  ansible.builtin.hostname:
     name: "{{ inventory_hostname }}"
